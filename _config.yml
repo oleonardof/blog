@@ -1,10 +1,7 @@
-title: Leonardo Silva - Portfólio e Blog
-description: Portfólio e blog de um Analista de Planejamento e Operações
+title: Leonardo Silva - Blog
+description: Blog de um Analista de Planejamento e Operações
 baseurl: ""
 url: "https://seu-site.pages.dev"
 theme: null
 plugins:
   - jekyll-feed
-collections:
-  projects:
-    output: true

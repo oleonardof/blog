@@ -1,0 +1,30 @@
+<aside class="w-full md:w-1/4 lg:w-1/5 px-4">
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
+        <img src="/assets/images/DataAnalyst.png" alt="Leonardo Silva" class="rounded-full w-24 h-24 mx-auto border-4 border-orange-400">
+        <h3 class="text-xl font-bold text-center mt-3">Leonardo Silva</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-center text-sm">Analista de Dados</p>
+        <p class="text-gray-600 dark:text-gray-300 text-sm mt-2 text-center">
+            Apaixonado por transformar dados em insights e contar histórias através da análise.
+        </p>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
+        <h3 class="font-bold mb-2 text-lg">Pesquisar</h3>
+        <input type="text" placeholder="Buscar no blog..." class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:border-gray-600">
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
+        <h3 class="font-bold mb-3 text-lg">Tags</h3>
+        <div class="flex flex-wrap gap-2">
+            {% for tag in site.tags %}
+                <a href="/tag/{{ tag[0] | slugify }}/" class="bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300 text-sm px-3 py-1 rounded-full hover:bg-orange-200 transition">
+                    {{ tag[0] }} ({{ tag[1].size }})
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">
+        <p class="text-gray-600 dark:text-gray-300">Espaço para Anúncio</p>
+    </div>
+</aside>

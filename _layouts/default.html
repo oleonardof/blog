@@ -62,4 +62,34 @@
                  <li><a href="/#skills" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Habilidades</a></li>
                  <li><a href="/#projects" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Projetos</a></li>
                  <li><a href="/experience.html" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Experiência</a></li>
-                 <li><a href
+                 <li><a href="/" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Blog</a></li>
+                 <li><a href="/#contact" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="flex-grow pt-20">
+        {{ content }}
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-8 px-4 dark:bg-black/50">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-orange-400">Leonardo Silva</a>
+                    <p class="mt-2 text-gray-400">Analista de Planejamento e Operações Pleno</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/oleonardof/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="https://github.com/oleonardof" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    <a href="https://www.credly.com/users/oleonardof" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition"><i class="fas fa-certificate text-xl"></i></a>
+                    <a href="mailto:leonardofsilva17@outlook.com" class="text-gray-400 hover:text-white transition"><i class="fas fa-envelope text-xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 dark:border-gray-600 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© <span id="year"></span> Leonardo Silva. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

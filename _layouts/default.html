@@ -9,7 +9,21 @@
     <script>
       tailwind.config = {
         darkMode: 'class',
-        plugins: [require('@tailwindcss/typography')],
+        // O plugin de tipografia para formatar o texto dos posts
+        plugins: [
+          function({ addBase, theme }) {
+            addBase({
+              '.prose': {
+                'h1, h2, h3, h4, h5, h6': { color: theme('colors.gray.800') },
+                'a': { color: theme('colors.orange.600') },
+              },
+              '.dark .prose': {
+                'h1, h2, h3, h4, h5, h6': { color: theme('colors.gray.200') },
+                'a': { color: theme('colors.orange.400') },
+              },
+            })
+          }
+        ]
       }
     </script>
     
@@ -21,16 +35,31 @@
     <header class="fixed w-full bg-white/80 dark:bg-gray-800/80 shadow-sm z-10 backdrop-blur-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="/" class="text-2xl font-bold text-orange-600 dark:text-orange-400">Leonardo <span class="text-orange-400 dark:text-orange-300">Silva</span></a>
+            <div class="flex items-center space-x-8">
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="/#about" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Sobre</a></li>
+                        <li><a href="/#skills" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Habilidades</a></li>
+                        <li><a href="/#projects" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Projetos</a></li>
+                        <li><a href="/experience.html" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Experiência</a></li>
+                        <li><a href="/" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Blog</a></li>
+                        <li><a href="/#contact" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="theme-toggle" class="text-orange-600 dark:text-orange-400 hover:text-orange-800 dark:hover:text-white transition">
+                    <i class="fas fa-moon text-xl"></i>
+                </button>
+
+                <button id="menuBtn" class="md:hidden text-orange-600 dark:text-orange-400">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
-    </header>
-    <main class="flex-grow pt-20">
-        {{ content }}
-    </main>
-    
-    <footer class="bg-gray-800 text-white py-8 px-4 dark:bg-black/50">
-        <div class="container mx-auto">
-           </div>
-    </footer>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-</body>
-</html>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-800 border-t dark:border-gray-700">
+             <ul class="py-4 px-4 space-y-4">
+                 <li><a href="/#about" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Sobre</a></li>
+                 <li><a href="/#skills" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Habilidades</a></li>
+                 <li><a href="/#projects" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Projetos</a></li>
+                 <li><a href="/experience.html" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Experiência</a></li>
+                 <li><a href

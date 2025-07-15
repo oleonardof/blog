@@ -96,15 +96,15 @@
     
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
-    <script src="{{ '/assets/js/simple-jekyll-search.min.js' | relative_url }}"></script>
+    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 
     <script>
       SimpleJekyllSearch({
-        searchInput: document.getElementById('searchInput'),
-        resultsContainer: document.getElementById('searchResults'),
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
         json: '{{ "/search.json" | relative_url }}',
-        searchResultTemplate: '<li><a href="{url}" class="text-orange-600 hover:underline">{title}</a></li>',
-        noResultsText: 'Nenhum resultado encontrado.',
+        searchResultTemplate: '<li class="text-gray-700 dark:text-gray-300"><a href="{url}" class="text-orange-600 dark:text-orange-400 hover:underline">{title}</a></li>',
+        noResultsText: '<li>Nenhum resultado encontrado.</li>',
         limit: 10,
         fuzzy: false
       });

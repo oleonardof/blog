@@ -1,5 +1,5 @@
 ---
-# ARQUIVO CORRIGIDO: _layouts/post.html
+# ARQUIVO ATUALIZADO: _layouts/post.html
 layout: default
 ---
 <div class="container mx-auto px-4 py-8">
@@ -17,10 +17,63 @@ layout: default
                 <div class="prose lg:prose-xl dark:prose-invert max-w-none">
                     {{ content }}
                 </div>
+
+                <div class="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <h3 class="text-lg font-semibold text-center mb-4">Compartilhe este post</h3>
+                    <div class="flex justify-center items-center flex-wrap gap-3">
+                        <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Compartilhar no Twitter" class="text-white bg-[#1DA1F2] w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener" aria-label="Compartilhar no Facebook" class="text-white bg-[#1877F2] w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Compartilhar no LinkedIn" class="text-white bg-[#0A66C2] w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?text={{ page.title | url_encode }}%20{{ page.url | absolute_url }}" target="_blank" rel="noopener" aria-label="Compartilhar no WhatsApp" class="text-white bg-[#25D366] w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/share/url?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Compartilhar no Telegram" class="text-white bg-[#24A1DE] w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Compartilhar no Reddit" class="text-white bg-[#FF4500] w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fab fa-reddit-alien"></i>
+                        </a>
+                        {% if page.image %}
+                        <a href="https://pinterest.com/pin/create/button/?url={{ page.url | absolute_url }}&media={{ page.image | absolute_url }}&description={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Salvar no Pinterest" class="text-white bg-[#BD081C] w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        {% endif %}
+                        <a href="mailto:?subject={{ page.title | url_encode }}&body=Confira este post:%20{{ page.url | absolute_url }}" aria-label="Compartilhar por Email" class="text-white bg-gray-500 w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="flex justify-between mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <div>
+                        {% if page.previous.url %}
+                        <a href="{{ page.previous.url | relative_url }}" class="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-800 dark:text-orange-300 px-4 py-2 rounded-lg hover:bg-orange-200 transition">
+                            <i class="fas fa-arrow-left mr-2"></i>
+                            Anterior
+                            <span class="hidden md:inline">: {{ page.previous.title | truncatewords: 4 }}</span>
+                        </a>
+                        {% endif %}
+                    </div>
+                    <div>
+                        {% if page.next.url %}
+                        <a href="{{ page.next.url | relative_url }}" class="inline-block bg-orange-100 dark:bg-orange-900/50 text-orange-800 dark:text-orange-300 px-4 py-2 rounded-lg hover:bg-orange-200 transition">
+                            <span class="hidden md:inline">{{ page.next.title | truncatewords: 4 }} :</span>
+                            Próximo
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        {% endif %}
+                    </div>
+                </nav>
+
             </article>
         </main>
 
         {% include sidebar.html %}
-        
     </div>
 </div>

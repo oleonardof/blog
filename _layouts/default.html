@@ -16,10 +16,12 @@
               '.prose': {
                 'h1, h2, h3, h4, h5, h6': { color: theme('colors.gray.800') },
                 'a': { color: theme('colors.orange.600') },
+                'p, ul, ol, li': { color: theme('colors.gray.700') },
               },
               '.dark .prose': {
                 'h1, h2, h3, h4, h5, h6': { color: theme('colors.gray.200') },
                 'a': { color: theme('colors.orange.400') },
+                'p, ul, ol, li': { color: theme('colors.gray.300') },
               },
             })
           }
@@ -34,23 +36,19 @@
 
     <header class="fixed w-full bg-white/80 dark:bg-gray-800/80 shadow-sm z-10 backdrop-blur-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="https://oleonardof.pages.dev/" class="text-2xl font-bold text-orange-600 dark:text-orange-400">Leonardo <span class="text-orange-400 dark:text-orange-300">Silva</span></a>
+            <a href="/" class="text-2xl font-bold text-orange-600 dark:text-orange-400">Leonardo <span class="text-orange-400 dark:text-orange-300">Silva</span></a>
             <div class="flex items-center space-x-8">
                 <nav class="hidden md:block">
                     <ul class="flex space-x-8">
-                        <li><a href="https://oleonardof.pages.dev/#about" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Sobre</a></li>
-                        <li><a href="https://oleonardof.pages.dev/#skills" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Habilidades</a></li>
-                        <li><a href="https://oleonardof.pages.dev/projects" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Projetos</a></li>
-                        <li><a href="https://oleonardof.pages.dev/experience" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Experiência</a></li>
+                        <li><a href="/#about" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Sobre</a></li>
+                        <li><a href="/#skills" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Habilidades</a></li>
+                        <li><a href="/#projects" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Projetos</a></li>
+                        <li><a href="/experience.html" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Experiência</a></li>
                         <li><a href="/" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Blog</a></li>
-                        <li><a href="https://oleonardof.pages.dev/#contact" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Contato</a></li>
+                        <li><a href="/#contact" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Contato</a></li>
                     </ul>
                 </nav>
-                
-                <button id="theme-toggle" class="text-orange-600 dark:text-orange-400 hover:text-orange-800 dark:hover:text-white transition">
-                    <i class="fas fa-moon text-xl"></i>
-                </button>
-
+                <button id="theme-toggle" class="text-orange-600 dark:text-orange-400 hover:text-orange-800 dark:hover:text-white transition"></button>
                 <button id="menuBtn" class="md:hidden text-orange-600 dark:text-orange-400">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
@@ -67,6 +65,7 @@
             </ul>
         </div>
     </header>
+
     <main class="flex-grow pt-20">
         {{ content }}
     </main>
@@ -75,7 +74,7 @@
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <a href="#" class="text-2xl font-bold text-orange-400">Leonardo Silva</a>
+                    <a href="/" class="text-2xl font-bold text-orange-400">Leonardo Silva</a>
                     <p class="mt-2 text-gray-400">Analista de Planejamento e Operações Pleno</p>
                 </div>
                 <div class="flex space-x-6">
@@ -90,6 +89,11 @@
             </div>
         </div>
     </footer>
+    
+    <button id="back-to-top-btn" class="hidden fixed bottom-5 right-5 bg-orange-600 hover:bg-orange-700 dark:bg-orange-500 dark:hover:bg-orange-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-opacity duration-300 z-20">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

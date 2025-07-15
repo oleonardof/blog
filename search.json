@@ -4,14 +4,12 @@ layout: null
 [
   {% for post in site.posts %}
     {
-      "title"    : "{{ post.title | escape }}",
+      "title"    : "{{ post.title | escape | smartify }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ post.url | relative_url }}",
-      "date"     : "{{ post.date | date: '%B %d, %Y' }}",
-      "content"  : "{{ post.content | strip_html | strip_newlines | remove_chars | escape }}"
+      "date"     : "{{ post.date | date: '%d de %B de %Y' }}",
+      "content"  : {{ post.content | strip_html | strip_newlines | jsonify }}
     }
     {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
-
-{% assign remove_chars = "" | split: "" %}

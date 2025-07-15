@@ -95,5 +95,19 @@
     </button>
     
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+    <script src="{{ '/assets/js/simple-jekyll-search.min.js' | relative_url }}"></script>
+
+    <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('searchInput'),
+        resultsContainer: document.getElementById('searchResults'),
+        json: '{{ "/search.json" | relative_url }}',
+        searchResultTemplate: '<li><a href="{url}" class="text-orange-600 hover:underline">{title}</a></li>',
+        noResultsText: 'Nenhum resultado encontrado.',
+        limit: 10,
+        fuzzy: false
+      });
+    </script>
 </body>
 </html>

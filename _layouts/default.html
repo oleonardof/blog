@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title | default: site.title }} | Leonardo Silva</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        plugins: [require('@tailwindcss/typography')],
+      }
+    </script>
+    
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 dark:bg-gray-900 dark:text-gray-200 flex flex-col min-h-screen">
+
+    <header class="fixed w-full bg-white/80 dark:bg-gray-800/80 shadow-sm z-10 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-orange-600 dark:text-orange-400">Leonardo <span class="text-orange-400 dark:text-orange-300">Silva</span></a>
+            </div>
+    </header>
+    <main class="flex-grow pt-20">
+        {{ content }}
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-8 px-4 dark:bg-black/50">
+        <div class="container mx-auto">
+           </div>
+    </footer>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

@@ -53,3 +53,11 @@ html.dark #theme-toggle-icon .fa-moon, html.dark #theme-toggle-icon-mobile .fa-m
     height: 100%;
     border: 0;
 }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+

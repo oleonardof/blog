@@ -15,7 +15,7 @@ layout: default
                 </div>    
                 </header>
                 {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="w-full h-auto rounded-lg mb-8 shadow-lg">{% endif %}
-                <div class="prose lg:prose-xl dark:prose-invert max-w-none">{{ content | markdownify }}</div>
+                <div class="prose lg:prose-xl dark:prose-invert max-w-none">{{ content }}</div>
 
                 <div class="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
                     <h3 class="text-lg font-semibold text-center mb-4">Compartilhe este post</h3>

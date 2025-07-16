@@ -1,0 +1,25 @@
+/* Estilos para os subtítulos do seu blog */
+
+h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Garante uma fonte consistente */
+  font-weight: 700; /* Deixa a fonte em negrito */
+  line-height: 1.3; /* Espaçamento entre linhas do título */
+  color: #222;     /* Cor do texto um pouco mais escura que o padrão */
+  margin-top: 2em;    /* Espaço ACIMA de cada título */
+  margin-bottom: 1em; /* Espaço ABAIXO de cada título */
+}
+
+h2 {
+  font-size: 1.7em; /* Tamanho da fonte para o subtítulo principal */
+  border-bottom: 1px solid #eaecef; /* Adiciona uma linha sutil abaixo */
+  padding-bottom: 0.4em; /* Espaçamento entre o texto do título e a linha */
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+  color: #444; /* Um pouco mais claro para diferenciar */
+}

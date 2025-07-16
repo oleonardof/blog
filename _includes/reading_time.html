@@ -1,0 +1,14 @@
+{% comment %}
+  Este snippet recebe o conteúdo de um post e exibe o tempo de leitura.
+  Uso: {% include reading_time.html content=post.content %}
+{% endcomment %}
+
+{%- assign words_per_minute = 180 -%}
+{%- assign number_of_words = include.content | number_of_words -%}
+{%- assign minutes = number_of_words | divided_by: words_per_minute -%}
+
+{% if minutes < 1 %}
+  <span class="text-xs text-gray-500 dark:text-gray-400">· 1 min de leitura</span>
+{% else %}
+  <span class="text-xs text-gray-500 dark:text-gray-400">· {{ minutes | round }} min de leitura</span>
+{% endif %}

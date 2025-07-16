@@ -30,6 +30,9 @@ layout: default
                         <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Compartilhar no Reddit" class="text-white bg-[#FF4500] w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
                             <i class="fab fa-reddit-alien"></i>
                         </a>
+                        <a href="mailto:?subject={{ page.title | url_encode }}&body=Confira este post:%20{{ page.url | absolute_url }}" aria-label="Compartilhar por Email" class="text-white bg-gray-500 w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
 

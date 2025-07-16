@@ -11,7 +11,7 @@ layout: default
                     <span>
                         {% assign m = page.date | date: "%-m" %}{{ page.date | date: "%d" }} de {% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Março{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %} de {{ page.date | date: "%Y" }}
                     </span>
-                    {% include reading_time.html content=page.content %}
+                    <span class="mx-2">-</span> {% include reading_time.html content=page.content %}
                 </div>    
                 </header>
                 {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="w-full h-auto rounded-lg mb-8 shadow-lg">{% endif %}

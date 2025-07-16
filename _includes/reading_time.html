@@ -8,7 +8,7 @@
 {%- assign minutes = number_of_words | divided_by: words_per_minute -%}
 
 {% if minutes < 1 %}
-  <span class="text-xs text-gray-500 dark:text-gray-400"> - Tempo de Leitura: 1 Min</span>
+  <span class="text-xs text-gray-500 dark:text-gray-400">Tempo de Leitura: 1 Min</span>
 {% else %}
-  <span class="text-xs text-gray-500 dark:text-gray-400"> - Tempo de Leitura: {{ minutes | round }} Min</span>
+  <span class="text-xs text-gray-500 dark:text-gray-400">Tempo de Leitura: {{ minutes | round }} Min</span>
 {% endif %}

@@ -14,7 +14,7 @@ title: Blog
                 <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg flex flex-col">
                     {% if post.image %}<a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="h-48 w-full object-cover"></a>{% endif %}
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                        <div class="text-sm text-gray-500 dark:text-gray-400 mb-2 flex flex-col items-center text-center space-y-1">
                             <div>
                                 {% assign m = post.date | date: "%-m" %}{{ post.date | date: "%d" }} de {% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Março{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %} de {{ post.date | date: "%Y" }}
                             </div>

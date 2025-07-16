@@ -18,7 +18,9 @@ title: Blog
                             <span>
                                 {% assign m = post.date | date: "%-m" %}{{ post.date | date: "%d" }} de {% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Março{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %} de {{ post.date | date: "%Y" }}
                             </span>
-                            <span class="mx-2">-</span> {% include reading_time.html content=post.content %}
+                            <span>
+                                {% include reading_time.html content=post.content %}
+                            </span>
                         </div>
                         <h3 class="text-xl font-semibold mb-2 flex-grow">
                             <a href="{{ post.url | relative_url }}" class="text-gray-800 dark:text-white hover:text-orange-500 dark:hover:text-orange-400">{{ post.title }}</a>

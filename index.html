@@ -14,11 +14,12 @@ title: Blog
                 <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg flex flex-col">
                     {% if post.image %}<a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="h-48 w-full object-cover"></a>{% endif %}
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex items-center justify-center text-gray-500 dark:text-gray-400 mt-2 text-sm">
+                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-1">
                             <span>
-                                {% assign m = page.date | date: "%-m" %}{{ page.date | date: "%d" }} de {% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Março{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %} de {{ page.date | date: "%Y" }}
+                                {% assign m = post.date | date: "%-m" %}{{ post.date | date: "%d" }} de {% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Março{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %} de {{ post.date | date: "%Y" }}
                             </span>
-                            <span class="mx-2">-</span> {% include reading_time.html content=page.content %}
+
+                            <span class="mx-2">-</span> {% include reading_time.html content=post.content %}
                         </div>
                         <h3 class="text-xl font-semibold mb-2 flex-grow">
                             <a href="{{ post.url | relative_url }}" class="text-gray-800 dark:text-white hover:text-orange-500 dark:hover:text-orange-400">{{ post.title }}</a>

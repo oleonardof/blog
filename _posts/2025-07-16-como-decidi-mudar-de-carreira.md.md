@@ -2,7 +2,6 @@
 layout: post
 title: "Como Mudar para a Área de Dados: Um Relato de Transição de Carreira"
 description: "Descubra como deixei para trás 11 anos em uma carreira estável para me reinventar na área de Dados. Compartilho os desafios, aprendizados e conquistas dos primeiros meses dessa mudança — um relato sincero para quem pensa em dar um novo rumo à vida profissional."
-permalink: /:categories/:year/:month/:day/:title:output_ext
 date: 2025-07-16 11:06:00 -0300
 image: /assets/images/capa-post-transicao-de-carreira.png
 alt: "Homem em encruzilhada entre caminho rotineiro e cidade futurista com símbolos de dados."

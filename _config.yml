@@ -2,6 +2,7 @@ title: Leonardo Silva - Blog
 description: Blog de um Analista de Planejamento e Operações
 baseurl: ""
 url: "https://blog-oleonardof.pages.dev"
+permalink: pretty
 theme: null
 plugins:
   - jekyll-feed

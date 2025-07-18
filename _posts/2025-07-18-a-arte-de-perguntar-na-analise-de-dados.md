@@ -70,8 +70,6 @@ Relacionam-se diretamente com o problema em análise.
 Delimitam um período específico para a análise.  
 **Exemplo:** "Quais foram os recursos mais populares nos últimos três anos?"
 
-> **Dica de SEO:** Use palavras-chave como _“exemplos de perguntas SMART”_ e _“como fazer perguntas eficazes”_ ao compartilhar este artigo.
-
 ## Quais perguntas evitar na análise de dados?
 
 Além de saber fazer boas perguntas, é fundamental **evitar armadilhas comuns**:
@@ -121,8 +119,6 @@ Criar dashboards, relatórios ou apresentações para comunicar os insights.
 
 ### 6. Agir (Act)
 Tomar decisões com base nos dados e implementar as soluções recomendadas.
-
-> **Palavras-chave relevantes:** _etapas da análise de dados_, _processo analítico_, _fases da análise_, _como transformar dados em ações_
 
 ## Quais tipos de problemas os analistas de dados resolvem?
 

@@ -5,7 +5,10 @@ description: "Descubra como deixei para trás 11 anos em uma carreira estável p
 date: 2025-07-16 11:06:00 -0300
 image: /assets/images/capa-post-transicao-de-carreira.png
 alt: "Homem em encruzilhada entre caminho rotineiro e cidade futurista com símbolos de dados."
-tags: ["Transição de Carreira", "Análise de Dados", "Power BI"]
+tags:
+  - Transição de Carreira
+  - Análise de Dados
+  - Power BI
 ---
 
 ## Rotina, Conforto e o Sinal de Mudança

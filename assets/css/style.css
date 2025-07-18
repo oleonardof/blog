@@ -112,3 +112,12 @@ html.dark #theme-toggle-icon .fa-moon, html.dark #theme-toggle-icon-mobile .fa-m
   margin: 1.5rem 0;
   font-style: italic;
 }
+
+.post-content a{
+  color: #f97316;
+  text-decoration: underline;
+}
+
+.post-content a:hover {
+  color: #ea580c;
+}

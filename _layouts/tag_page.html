@@ -12,30 +12,28 @@ layout: default
                 
                 {% for post in site.posts %}
                   {% if post.tags contains page.tag %}
-
-                  <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col">
-                      {% if post.image %}
-                      <a href="{{ post.url | relative_url }}">
-                          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="h-48 w-full object-cover">
-                      </a>
-                      {% else %}
-                      <a href="{{ post.url | relative_url }}">
-                          <div class="h-48 bg-orange-100 dark:bg-gray-700 flex items-center justify-center">
-                              <i class="fas fa-newspaper text-5xl text-orange-600 dark:text-orange-400"></i>
-                          </div>
-                      </a>
-                      {% endif %}
-                      <div class="p-6 flex flex-col flex-grow">
-                          <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">{{ post.date | date: "%d de %B de %Y" }}</p>
-                          <h3 class="text-xl font-semibold mb-2 flex-grow">
-                              <a href="{{ post.url | relative_url }}" class="text-gray-800 dark:text-white hover:text-orange-500 dark:hover:text-orange-400">
-                                  {{ post.title }}
-                              </a>
-                          </h3>
-                          <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-                      </div>
-                  </div>
-
+                    <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col">
+                        {% if post.image %}
+                        <a href="{{ post.url | relative_url }}">
+                            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="h-48 w-full object-cover">
+                        </a>
+                        {% else %}
+                        <a href="{{ post.url | relative_url }}">
+                            <div class="h-48 bg-orange-100 dark:bg-gray-700 flex items-center justify-center">
+                                <i class="fas fa-newspaper text-5xl text-orange-600 dark:text-orange-400"></i>
+                            </div>
+                        </a>
+                        {% endif %}
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">{{ post.date | date: "%d de %B de %Y" }}</p>
+                            <h3 class="text-xl font-semibold mb-2 flex-grow">
+                                <a href="{{ post.url | relative_url }}" class="text-gray-800 dark:text-white hover:text-orange-500 dark:hover:text-orange-400">
+                                    {{ post.title }}
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+                        </div>
+                    </div>
                   {% endif %}
                 {% endfor %}
                 

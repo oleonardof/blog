@@ -6,7 +6,7 @@ date: 2025-07-18 13:19:00 -0300
 image: /assets/images/capa-post-perguntas-eficazes.png
 alt: "Uma pessoa em pé diante de um grande mural digital cheio de dados"
 tags:
-  - Análise
+  - Analise
 ---
 
 ## Por que fazer as perguntas certas é essencial na análise de dados?

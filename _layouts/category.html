@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container mx-auto px-4 py-8">
     <div class="text-center mb-12 pt-16">
-        <h1 class="text-3xl md:text-4xl font-bold">Posts com a Tag: <span class="text-orange-600 dark:text-orange-400 capitalize">{{ page.tag }}</span></h1>
+        <h1 class="text-3xl md:text-4xl font-bold">Posts na Categoria: <span class="text-orange-600 dark:text-orange-400 capitalize">{{ page.tag }}</span></h1>
     </div>
 
     <div class="flex flex-col md:flex-row -mx-4">
@@ -11,7 +11,7 @@ layout: default
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 {% for post in site.posts %}
-                  {% if post.tags contains page.tag %}
+                  {% if post.categories contains page.tag %}
                     <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col">
                         {% if post.image %}
                         <a href="{{ post.url | relative_url }}">

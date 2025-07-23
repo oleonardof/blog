@@ -11,16 +11,16 @@
     <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
         <h3 class="font-bold mb-2 text-lg">Pesquisar</h3>
         <input type="text" id="search-input" placeholder="Buscar no blog..." class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:border-gray-600">
-    
         <ul id="results-container" class="mt-4 list-disc pl-5 text-gray-700 dark:text-gray-300"></ul>
     </div>
 
     <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
-        <h3 class="font-bold mb-3 text-lg">Tags</h3>
+        <h3 class="font-bold mb-3 text-lg">Categorias</h3>
         <div class="flex flex-wrap gap-2">
-            {% for tag in site.tags %}
-                <a href="/tag/{{ tag[0] | slugify }}/" class="bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300 text-sm px-3 py-1 rounded-full hover:bg-orange-200 transition">
-                    {{ tag[0] }} ({{ tag[1].size }})
+            {% assign categories = site.posts | map: "categories" | join: "," | split: "," | uniq | sort %}
+            {% for category in categories %}
+                <a href="/categoria/{{ category | slugify }}/" class="bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300 text-sm px-3 py-1 rounded-full hover:bg-orange-200 transition">
+                    {{ category }}
                 </a>
             {% endfor %}
         </div>

@@ -306,7 +306,8 @@
                 <script src="https://giscus.app/client.js" data-repo="oleonardof/blog" data-repo-id="R_kgDOPM4Nqw" data-category="General" data-category-id="DIC_kwDOPM4Nq84Cs_t-" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="dark" data-lang="pt" crossorigin="anonymous" async></script>
             </section>
         </main>
-        <aside class="w-full md:w-1/4 lg:w-1/5 px-4 mt-8 md:mt-0">
+        
+<aside class="w-full md:w-1/4 lg:w-1/5 px-4 mt-8 md:mt-0">
     <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
         <img src="/assets/images/DataAnalyst.png" alt="Leonardo Silva" class="rounded-full w-24 h-24 mx-auto border-4 border-orange-400">
         <h3 class="text-xl font-bold text-center mt-3">Leonardo Silva</h3>
@@ -323,15 +324,19 @@
     </div>
 
     <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
-        <h3 class="font-bold mb-3 text-lg">Categorias</h3>
-        <div class="flex flex-wrap gap-2">
-            
-            
-                <a href="/categoria/análise-de-dados/" class="bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300 text-sm px-3 py-1 rounded-full hover:bg-orange-200 transition">
-                    Análise de Dados
+        <h3 class="font-bold mb-3 text-lg border-b border-gray-200 dark:border-gray-700 pb-2">Categorias</h3>
+        <ul class="space-y-2 mt-3">
+            {% for category in site.categories %}
+            <li>
+                <a href="{{ site.baseurl }}/categorias/{{ category[0] | slugify }}/" class="flex justify-between items-center text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">
+                    <span>{{ category[0] }}</span>
+                    <span class="text-xs bg-orange-100 dark:bg-orange-900/50 text-orange-800 dark:text-orange-300 font-semibold px-2 py-1 rounded-full">
+                        {{ category[1].size }}
+                    </span>
                 </a>
-            
-        </div>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 
     <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">

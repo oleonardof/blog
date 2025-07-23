@@ -2,7 +2,7 @@ title: Leonardo Silva - Blog
 description: Blog de um Analista de Planejamento e Operações
 baseurl: "/blog"
 url: "https://oleonardof.github.io/blog/"
-permalink: /blog/:title/
+permalink: /:title/
 theme: null
 plugins:
   - jekyll-feed

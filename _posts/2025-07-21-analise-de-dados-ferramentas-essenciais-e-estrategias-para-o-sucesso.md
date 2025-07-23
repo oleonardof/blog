@@ -5,7 +5,7 @@ description: "Descubra como as ferramentas certas, o raciocínio analítico e a 
 date: 2025-07-21 13:27:00 -0300
 image: /assets/images/painel-analise-dados.png
 alt: "Painel moderno de análise de dados com gráficos em uma reunião acadêmica, mostrando professores e gestores universitários analisando informações."
-tags:
+category:
   - Análise de Dados
 ---
 

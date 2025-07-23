@@ -1,10 +1,43 @@
+# Informações Principais do Site
 title: Leonardo Silva - Blog
 description: Blog de um Analista de Planejamento e Operações
+
+# Configuração de URL
+# 'url' deve ser apenas o domínio principal do seu site.
+# 'baseurl' é o subdiretório do site. O Jekyll combina os dois para formar a URL final.
+# CORRIGIDO: O '/blog' foi removido da 'url' e mantido apenas no 'baseurl'.
+url: "https://oleonardof.github.io"
 baseurl: "/blog"
-url: "https://oleonardof.github.io/blog/"
-permalink: /:title/
+
+# Estrutura de Permalinks para os posts
+# SUGESTÃO: Uma estrutura mais robusta para evitar posts com a mesma URL se tiverem o mesmo título.
+permalink: /:categories/:title/
+
+# Configuração de Tema
+# 'theme: null' é usado quando você tem seus próprios layouts na pasta _layouts.
 theme: null
+
+# Lista de Plugins
+# ADICIONADO: 'jekyll-archives' para habilitar a geração automática de páginas de categorias.
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-archives
+
+# Configurações do Plugin Jekyll Archives
+# Este bloco configura o plugin para criar as páginas de categorias e tags.
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    # Você precisará criar estes layouts na sua pasta _layouts
+    # Ex: _layouts/category_archive.html
+    category: category_archive 
+    tag: tag_archive
+  permalinks:
+    # Define como as URLs das páginas de arquivo serão formatadas.
+    # Ex: seusite.com/blog/categorias/tecnologia/
+    category: '/categorias/:name/'
+    tag: '/tags/:name/'

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta name="google-site-verification" content="5r5ypbdSAI681-RIssotStaqN-UA6hcmrtQ1OtW6wp8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Leonardo Silva</title>
+
+    <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Leonardo Silva" />
+    <link rel="manifest" href="/assets/images/favicons/site.webmanifest" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        // O plugin de tipografia para formatar o texto dos posts
+        plugins: [
+          function({ addBase, theme }) {
+            addBase({
+              '.prose': {
+                'h1, h2, h3, h4, h5, h6': { color: theme('colors.gray.800') },
+                'a': { color: theme('colors.orange.600') },
+                'p, ul, ol, li': { color: theme('colors.gray.700') },
+              },
+              '.dark .prose': {
+                'h1, h2, h3, h4, h5, h6': { color: theme('colors.gray.200') },
+                'a': { color: theme('colors.orange.400') },
+                'p, ul, ol, li': { color: theme('colors.gray.300') },
+              },
+            })
+          }
+        ]
+      }
+    </script>
+    
+    <link rel="stylesheet" href="/blog/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Blog | Leonardo Silva - Blog</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Blog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Blog de um Analista de Planejamento e Operações" />
+<meta property="og:description" content="Blog de um Analista de Planejamento e Operações" />
+<link rel="canonical" href="https://oleonardof.github.io/blog/" />
+<meta property="og:url" content="https://oleonardof.github.io/blog/" />
+<meta property="og:site_name" content="Leonardo Silva - Blog" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Blog" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Blog de um Analista de Planejamento e Operações","headline":"Blog","name":"Leonardo Silva - Blog","url":"https://oleonardof.github.io/blog/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 dark:bg-gray-900 dark:text-gray-200 flex flex-col min-h-screen">
+
+    <header class="fixed w-full bg-white/80 dark:bg-gray-800/80 shadow-sm z-10 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="https://oleonardof.pages.dev/" class="text-2xl font-bold text-orange-600 dark:text-orange-400">Leonardo <span class="text-orange-400 dark:text-orange-300">Silva</span></a>
+            <div class="flex items-center space-x-8">
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="https://oleonardof.pages.dev/#about" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Sobre</a></li>
+                        <li><a href="https://oleonardof.pages.dev/#skills" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Habilidades</a></li>
+                        <li><a href="https://oleonardof.pages.dev/projects" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Projetos</a></li>
+                        <li><a href="https://oleonardof.pages.dev/experience" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Experiência</a></li>
+                        <li><a href="/" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Blog</a></li>
+                        <li><a href="https://oleonardof.pages.dev/#contact" class="hover:text-orange-500 dark:hover:text-orange-400 transition">Contato</a></li>
+                    </ul>
+                </nav>
+                <button id="theme-toggle" class="text-orange-600 dark:text-orange-400 hover:text-orange-800 dark:hover:text-white transition"></button>
+                <button id="menuBtn" class="md:hidden text-orange-600 dark:text-orange-400">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-800 border-t dark:border-gray-700">
+             <ul class="py-4 px-4 space-y-4">
+                 <li><a href="https://oleonardof.pages.dev/#about" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Sobre</a></li>
+                 <li><a href="https://oleonardof.pages.dev/#skills" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Habilidades</a></li>
+                 <li><a href="https://oleonardof.pages.dev/projects" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Projetos</a></li>
+                 <li><a href="https://oleonardof.pages.dev/experience" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Experiência</a></li>
+                 <li><a href="/" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Blog</a></li>
+                 <li><a href="https://oleonardof.pages.dev/#contact" class="block hover:text-orange-500 dark:hover:text-orange-400 transition">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-20">
+        <div class="container mx-auto px-4 py-8">
+    <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-orange-600 dark:text-orange-400">Blog</h1>
+    </p>
+    </div>
+    <div class="flex flex-col md:flex-row -mx-4">
+        <main class="w-full md:w-3/4 lg:w-4/5 px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg flex flex-col">
+                    <a href="/blog/an%C3%A1lise%20de%20dados/analise-de-dados-ferramentas-essenciais-e-estrategias-para-o-sucesso/"><img src="/blog/assets/images/painel-analise-dados.png" alt="O Universo da Análise de Dados: Ferramentas Essenciais e Estratégias para o Sucesso" class="h-48 w-full object-cover"></a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-1">
+                            <span>
+                                21 de Julho de 2025
+                            </span>
+
+                            <span class="mx-2">-</span> 
+  <span class="text-xs text-gray-500 dark:text-gray-400">Leitura: 5 Min</span>
+
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 flex-grow">
+                            <a href="/blog/an%C3%A1lise%20de%20dados/analise-de-dados-ferramentas-essenciais-e-estrategias-para-o-sucesso/" class="text-gray-800 dark:text-white hover:text-orange-500 dark:hover:text-orange-400">O Universo da Análise de Dados: Ferramentas Essenciais e Estratégias para o Sucesso</a>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">O Universo da Análise de Dados: Ferramentas Essenciais e Estratégias para o Sucesso No mundo atual, impulsionado por informações, a...</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg flex flex-col">
+                    <a href="/blog/an%C3%A1lise%20de%20dados/a-arte-de-perguntar-na-analise-de-dados/"><img src="/blog/assets/images/capa-post-perguntas-eficazes.png" alt="A Arte de Perguntar: Desvendando o Poder da Análise de Dados" class="h-48 w-full object-cover"></a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-1">
+                            <span>
+                                18 de Julho de 2025
+                            </span>
+
+                            <span class="mx-2">-</span> 
+  <span class="text-xs text-gray-500 dark:text-gray-400">Leitura: 4 Min</span>
+
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 flex-grow">
+                            <a href="/blog/an%C3%A1lise%20de%20dados/a-arte-de-perguntar-na-analise-de-dados/" class="text-gray-800 dark:text-white hover:text-orange-500 dark:hover:text-orange-400">A Arte de Perguntar: Desvendando o Poder da Análise de Dados</a>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">Por que fazer as perguntas certas é essencial na análise de dados? Em um mundo de mudanças rápidas e incerteza...</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg flex flex-col">
+                    <a href="/blog/como-decidi-mudar-de-carreira/"><img src="/blog/assets/images/capa-post-transicao-de-carreira.png" alt="Como Mudar para a Área de Dados: Um Relato de Transição de Carreira" class="h-48 w-full object-cover"></a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-1">
+                            <span>
+                                16 de Julho de 2025
+                            </span>
+
+                            <span class="mx-2">-</span> 
+  <span class="text-xs text-gray-500 dark:text-gray-400">Leitura: 5 Min</span>
+
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 flex-grow">
+                            <a href="/blog/como-decidi-mudar-de-carreira/" class="text-gray-800 dark:text-white hover:text-orange-500 dark:hover:text-orange-400">Como Mudar para a Área de Dados: Um Relato de Transição de Carreira</a>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">Rotina, Conforto e o Sinal de Mudança Por 11 anos, atuei como negociador de preços de combustível em uma grande...</p>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <aside class="w-full md:w-1/4 lg:w-1/5 px-4 mt-8 md:mt-0">
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
+        <img src="/assets/images/DataAnalyst.png" alt="Leonardo Silva" class="rounded-full w-24 h-24 mx-auto border-4 border-orange-400">
+        <h3 class="text-xl font-bold text-center mt-3">Leonardo Silva</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-center text-sm">Analista de Planejamento e Operações Pleno</p>
+        <p class="text-gray-600 dark:text-gray-300 text-sm mt-2 text-center">
+            Transformando dados brutos em insights valiosos com Python, SQL e ferramentas de visualização.
+        </p>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
+        <h3 class="font-bold mb-2 text-lg">Pesquisar</h3>
+        <input type="text" id="search-input" placeholder="Buscar no blog..." class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:border-gray-600">
+        <ul id="results-container" class="mt-4 list-disc pl-5 text-gray-700 dark:text-gray-300"></ul>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
+        <h3 class="font-bold mb-3 text-lg">Categorias</h3>
+        <div class="flex flex-wrap gap-2">
+            
+            
+                <a href="/categoria/análise-de-dados/" class="bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300 text-sm px-3 py-1 rounded-full hover:bg-orange-200 transition">
+                    Análise de Dados
+                </a>
+            
+        </div>
+    </div>
+
+    <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">
+        <p class="text-gray-600 dark:text-gray-300">Espaço para Anúncio</p>
+    </div>
+</aside>
+
+    </div>
+</div>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-8 px-4 dark:bg-black/50">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="/" class="text-2xl font-bold text-orange-400">Leonardo Silva</a>
+                    <p class="mt-2 text-gray-400">Analista de Planejamento e Operações Pleno</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/oleonardof/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="https://github.com/oleonardof" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                    <a href="https://www.credly.com/users/oleonardof" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition"><i class="fas fa-certificate text-xl"></i></a>
+                    <a href="mailto:leonardofsilva17@outlook.com" class="text-gray-400 hover:text-white transition"><i class="fas fa-envelope text-xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 dark:border-gray-600 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© <span id="year"></span> Leonardo Silva. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="back-to-top-btn" class="hidden fixed bottom-5 right-5 bg-orange-600 hover:bg-orange-700 dark:bg-orange-500 dark:hover:bg-orange-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-opacity duration-300 z-20">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="/blog/assets/js/main.js"></script>
+
+    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+
+    <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/blog/search.json',
+        searchResultTemplate: '<li class="text-gray-700 dark:text-gray-300"><a href="{url}" class="text-orange-600 dark:text-orange-400 hover:underline">{title}</a></li>',
+        noResultsText: '<li>Nenhum resultado encontrado.</li>',
+        limit: 10,
+        fuzzy: false
+      });
+    </script>
+</body>
+</html>

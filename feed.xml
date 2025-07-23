@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oleonardof.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oleonardof.github.io/blog/" rel="alternate" type="text/html" /><updated>2025-07-23T20:07:19+00:00</updated><id>https://oleonardof.github.io/blog/feed.xml</id><title type="html">Leonardo Silva - Blog</title><subtitle>Blog de um Analista de Planejamento e Operações</subtitle><entry><title type="html">O Universo da Análise de Dados: Ferramentas Essenciais e Estratégias para o Sucesso</title><link href="https://oleonardof.github.io/blog/an%C3%A1lise%20de%20dados/analise-de-dados-ferramentas-essenciais-e-estrategias-para-o-sucesso/" rel="alternate" type="text/html" title="O Universo da Análise de Dados: Ferramentas Essenciais e Estratégias para o Sucesso" /><published>2025-07-21T16:27:00+00:00</published><updated>2025-07-21T16:27:00+00:00</updated><id>https://oleonardof.github.io/blog/an%C3%A1lise%20de%20dados/analise-de-dados-ferramentas-essenciais-e-estrategias-para-o-sucesso</id><content type="html" xml:base="https://oleonardof.github.io/blog/an%C3%A1lise%20de%20dados/analise-de-dados-ferramentas-essenciais-e-estrategias-para-o-sucesso/"><![CDATA[<h1 id="o-universo-da-análise-de-dados-ferramentas-essenciais-e-estratégias-para-o-sucesso">O Universo da Análise de Dados: Ferramentas Essenciais e Estratégias para o Sucesso</h1>
+
+<p>No mundo atual, impulsionado por informações, a capacidade de entender e utilizar dados tornou-se uma habilidade fundamental para profissionais em diversas áreas. Como analistas de dados, nossa missão é fornecer insights cruciais que embasam decisões-chave, estruturando nossa análise de forma a capacitar líderes a fazerem as melhores escolhas possíveis.</p>
+
+<p>Dados, em sua essência, são uma coleção de fatos. A análise desses fatos — como o número de matrículas efetivadas, evasões recorrentes por curso ou média de desempenho em disciplinas-chave — permite identificar padrões, prever comportamentos e agir com mais segurança.</p>
+
+<p>Um bom exemplo é quando observamos uma queda na taxa de rematrícula em determinado curso e conseguimos, por meio dos dados históricos e do cruzamento com indicadores acadêmicos e financeiros, levantar hipóteses sobre as causas e propor soluções antes que o problema se agrave.</p>
+
+<p>Para isso, utilizamos ferramentas poderosas como <strong>SQL</strong>, <strong>Excel</strong>, <strong>Power BI</strong> e <strong>Python</strong>, que nos auxiliam a organizar e explorar grandes volumes de informações, criando relatórios visuais e interativos que facilitam a interpretação por tomadores de decisão.</p>
+
+<p>Imagine uma instituição de ensino superior onde a direção precisa entender quais cursos estão com maior índice de evasão. Um painel bem estruturado pode não apenas apresentar os dados de forma clara, mas também permitir filtros por período, turno, unidade, modalidade (presencial ou EAD) e perfil do aluno — oferecendo uma visão completa da situação.</p>
+
+<p>Além das ferramentas, é essencial desenvolver uma <strong>mentalidade analítica</strong>: saber questionar os dados, entender o contexto por trás dos números, levantar hipóteses e validá-las. A análise de dados vai além do aspecto técnico; ela exige sensibilidade para interpretar cenários reais.</p>
+
+<p>Por exemplo, ao analisar a performance acadêmica de uma turma, não basta apontar que a média caiu. É preciso investigar:</p>
+
+<ul>
+  <li>Houve mudança na metodologia?</li>
+  <li>Professores diferentes?</li>
+  <li>Carga horária reduzida?</li>
+  <li>Problemas relatados pelos estudantes?</li>
+</ul>
+
+<p>Outro ponto crucial é a <strong>comunicação</strong>. Não basta dominar as ferramentas se não conseguimos traduzir a análise em ações práticas. Precisamos apresentar os resultados de maneira clara e objetiva, usando uma linguagem acessível a diferentes públicos.</p>
+
+<p>Muitas vezes, uma coordenação de curso não está familiarizada com termos estatísticos, mas compreende perfeitamente um gráfico de dispersão que demonstra a correlação entre frequência e reprovação.</p>
+
+<hr />
+
+<p>Em suma, o sucesso na área de Análise de Dados depende da combinação de três pilares:</p>
+
+<ol>
+  <li><strong>Ferramentas adequadas</strong></li>
+  <li><strong>Raciocínio crítico</strong></li>
+  <li><strong>Comunicação eficaz</strong></li>
+</ol>
+
+<p>Com eles, conseguimos transformar dados brutos em <strong>estratégias inteligentes</strong> que fazem a diferença na rotina das universidades e contribuem para uma gestão mais eficiente, humana e centrada em resultados reais.</p>
+
+<h2 id="tipos-de-dados-quantitativos-e-qualitativos">Tipos de Dados: Quantitativos e Qualitativos</h2>
+
+<h3 id="dados-quantitativos">Dados Quantitativos</h3>
+
+<ul>
+  <li>Medem o “o quê”, “quanto” e “com que frequência”.</li>
+  <li>São objetivos, numéricos e facilmente visualizados em tabelas e gráficos.</li>
+  <li>Exemplo: média de público no cinema por mês.</li>
+</ul>
+
+<h3 id="dados-qualitativos">Dados Qualitativos</h3>
+
+<ul>
+  <li>Respondem ao “porquê”.</li>
+  <li>São subjetivos, explicativos e usados para entender preferências e percepções.</li>
+  <li>Exemplo: opinião de clientes sobre o sabor de um produto ou horário de exibição.</li>
+</ul>
+
+<h3 id="integração-dos-dois-tipos-de-dados">Integração dos Dois Tipos de Dados</h3>
+
+<p>A análise combinada de dados qualitativos e quantitativos proporciona uma visão mais completa. Um negócio pode, por exemplo, perceber queda nas avaliações (quantitativo) e descobrir que isso se deve à falta de produtos populares (qualitativo).</p>
+
+<h2 id="big-data-vs-small-data">Big Data vs. Small Data</h2>
+
+<h3 id="small-data">Small Data</h3>
+
+<ul>
+  <li>Dados simples, estruturados e fáceis de analisar.</li>
+  <li>Utilizados em decisões operacionais e do dia a dia.</li>
+  <li>Gerenciáveis por ferramentas como Excel e Google Sheets.</li>
+</ul>
+
+<h3 id="big-data">Big Data</h3>
+
+<ul>
+  <li>Enormes volumes de dados processados com tecnologias como SQL, Hadoop ou Spark.</li>
+  <li>Usado por grandes empresas para prever tendências, otimizar operações e entender o mercado.</li>
+</ul>
+
+<h3 id="os-4-vs-do-big-data">Os 4 Vs do Big Data</h3>
+
+<ul>
+  <li><strong>Volume:</strong> Grande quantidade de dados.</li>
+  <li><strong>Variedade:</strong> Diversidade de formatos (texto, imagem, vídeo).</li>
+  <li><strong>Velocidade:</strong> Processamento em tempo real.</li>
+  <li><strong>Veracidade:</strong> Qualidade e confiabilidade dos dados.</li>
+</ul>
+
+<h2 id="tomada-de-decisão-baseada-vs-inspirada-em-dados">Tomada de Decisão: Baseada vs. Inspirada em Dados</h2>
+
+<h3 id="decisão-baseada-em-dados">Decisão Baseada em Dados</h3>
+
+<p>Utiliza fatos e números diretamente para orientar a estratégia.<br />
+Exemplo: Testes A/B para comparar layouts de sites.</p>
+
+<h3 id="decisão-inspirada-em-dados">Decisão Inspirada em Dados</h3>
+
+<p>Inclui dados quantitativos e qualitativos, adicionando contexto humano e estratégico.<br />
+Exemplo: integração de feedback de funcionários em mudanças de processos internos.</p>
+
+<h2 id="ferramentas-para-análise-de-dados">Ferramentas para Análise de Dados</h2>
+
+<h3 id="planilhas-excel-e-google-sheets">Planilhas (Excel e Google Sheets)</h3>
+
+<ul>
+  <li>Úteis para Small Data.</li>
+  <li>Fases do ciclo de vida dos dados: captura, gerenciamento, análise e arquivamento.</li>
+</ul>
+
+<h2 id="visualização-de-dados-relatórios-vs-dashboards">Visualização de Dados: Relatórios vs. Dashboards</h2>
+
+<h3 id="relatórios">Relatórios</h3>
+
+<ul>
+  <li>Estáticos, mostram dados históricos.</li>
+  <li>Ideais para apresentações semanais/mensais.</li>
+  <li>Construídos em Excel com tabelas e gráficos.</li>
+</ul>
+
+<h3 id="dashboards">Dashboards</h3>
+
+<ul>
+  <li>Dinâmicos e interativos.</li>
+  <li>Usam ferramentas como Power BI e Tableau.</li>
+  <li>Permitem acompanhamento em tempo real com filtros e segmentações.</li>
+</ul>
+
+<h3 id="ferramentas-de-visualização-recomendadas">Ferramentas de Visualização Recomendadas</h3>
+
+<ul>
+  <li>Excel: Tabelas Dinâmicas, Gráficos</li>
+  <li>Google Sheets: Gráficos e Dashboards simples</li>
+  <li>Power BI: Integração com bancos de dados, painéis dinâmicos</li>
+  <li>Tableau: Visualizações avançadas e interativas</li>
+  <li>Looker Studio (Google): Visualização integrada com BigQuery e GA4</li>
+</ul>
+
+<h2 id="melhores-práticas-para-analistas-de-dados">Melhores Práticas para Analistas de Dados</h2>
+
+<ul>
+  <li>Combine lógica com empatia ao interpretar dados.</li>
+  <li>Valide sempre a fonte e a consistência dos dados.</li>
+  <li>Documente suas fórmulas e processos.</li>
+  <li>Utilize funções DAX, Power Query ou SQL em bases maiores.</li>
+  <li>Esteja em constante aprendizado: dados mudam, ferramentas evoluem.</li>
+</ul>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Dominar a análise de dados exige entendimento técnico, visão crítica e habilidade de comunicação. Ao aplicar boas práticas, interpretar corretamente os dados e usar as ferramentas certas, você transforma números em decisões valiosas.</p>
+
+<p>A análise de dados é um campo dinâmico e de aprendizado contínuo. A cada projeto, a cada conjunto de dados, você descobrirá novas perspectivas e aprimorará suas habilidades. Mantenha uma mentalidade curiosa e orientada por dados, faça muitas perguntas, experimente diferentes possibilidades e combine lógica com criatividade. Com essa abordagem, você estará bem preparado para interpretar seus dados com o mais alto nível de cuidado e precisão, transformando fatos em insights poderosos e ajudando as organizações a prosperarem.</p>]]></content><author><name></name></author><category term="Análise de Dados" /><summary type="html"><![CDATA[Descubra como as ferramentas certas, o raciocínio analítico e a comunicação eficaz transformam dados brutos em decisões estratégicas no contexto da educação superior.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://oleonardof.github.io/blog/assets/images/painel-analise-dados.png" /><media:content medium="image" url="https://oleonardof.github.io/blog/assets/images/painel-analise-dados.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">A Arte de Perguntar: Desvendando o Poder da Análise de Dados</title><link href="https://oleonardof.github.io/blog/an%C3%A1lise%20de%20dados/a-arte-de-perguntar-na-analise-de-dados/" rel="alternate" type="text/html" title="A Arte de Perguntar: Desvendando o Poder da Análise de Dados" /><published>2025-07-18T16:19:00+00:00</published><updated>2025-07-18T16:19:00+00:00</updated><id>https://oleonardof.github.io/blog/an%C3%A1lise%20de%20dados/a-arte-de-perguntar-na-analise-de-dados</id><content type="html" xml:base="https://oleonardof.github.io/blog/an%C3%A1lise%20de%20dados/a-arte-de-perguntar-na-analise-de-dados/"><![CDATA[<h2 id="por-que-fazer-as-perguntas-certas-é-essencial-na-análise-de-dados">Por que fazer as perguntas certas é essencial na análise de dados?</h2>
+
+<p>Em um mundo de mudanças rápidas e incerteza crescente, até mesmo as empresas mais estabelecidas enfrentam pressão constante para inovar. A chave para essa inovação muitas vezes reside em uma prática fundamental: <a href="https://www.thebilab.com.br/post/perguntas-de-negocios-para-gerar-insights" target="_blank"><strong>fazer as perguntas certas</strong></a>.</p>
+
+<p>Isso é crucial na análise de dados. Não importa a quantidade de informações ou o quão avançadas sejam suas ferramentas — <strong>sem uma pergunta bem definida, os dados não revelam insights valiosos</strong>.</p>
+
+<p>Imagine um detetive com toneladas de evidências, mas que não faz as perguntas certas ao principal suspeito. O raciocínio é o mesmo para o analista de dados.</p>
+
+<h2 id="a-fase-perguntar-o-ponto-de-partida-da-análise-de-dados">A fase “Perguntar”: o ponto de partida da análise de dados</h2>
+
+<p>O processo de análise de dados é composto por seis fases essenciais:</p>
+
+<ol>
+  <li><strong>Perguntar</strong> (Ask)</li>
+  <li><strong>Preparar</strong> (Prepare)</li>
+  <li><strong>Processar</strong> (Process)</li>
+  <li><strong>Analisar</strong> (Analyze)</li>
+  <li><strong>Compartilhar</strong> (Share)</li>
+  <li><strong>Agir</strong> (Act)</li>
+</ol>
+
+<p>A primeira, <strong>Perguntar</strong>, é a mais estratégica. É nela que o analista:</p>
+
+<ul>
+  <li>Define claramente o problema a ser resolvido</li>
+  <li>Entende as expectativas das partes interessadas</li>
+  <li>Mantém o foco no problema real</li>
+  <li>Colabora com os stakeholders</li>
+  <li>Analisa o contexto mais amplo</li>
+</ul>
+
+<h2 id="o-que-são-perguntas-smart">O que são perguntas SMART?</h2>
+
+<p>Perguntas eficazes seguem o framework <strong>SMART</strong>, um acrônimo que representa:</p>
+
+<ul>
+  <li><strong>S</strong> — Específicas (<em>Specific</em>)</li>
+  <li><strong>M</strong> — Mensuráveis (<em>Measurable</em>)</li>
+  <li><strong>A</strong> — Orientadas para a Ação (<em>Action-oriented</em>)</li>
+  <li><strong>R</strong> — Relevantes (<em>Relevant</em>)</li>
+  <li><strong>T</strong> — Vinculadas ao Tempo (<em>Time-bound</em>)</li>
+</ul>
+
+<h3 id="1-perguntas-específicas-specific">1. Perguntas Específicas (Specific)</h3>
+
+<p>Focam em um único tópico ou ideia.<br />
+<strong>Exemplo:</strong> “Qual porcentagem de crianças pratica 60 minutos de atividade física pelo menos cinco dias por semana?”</p>
+
+<h3 id="2-perguntas-mensuráveis-measurable">2. Perguntas Mensuráveis (Measurable)</h3>
+
+<p>Têm respostas que podem ser quantificadas.<br />
+<strong>Exemplo:</strong> “Quantas vezes nosso vídeo foi compartilhado nas redes sociais na primeira semana?”</p>
+
+<h3 id="3-perguntas-orientadas-para-a-ação-action-oriented">3. Perguntas Orientadas para a Ação (Action-oriented)</h3>
+
+<p>Geram respostas que ajudam a definir ações concretas.<br />
+<strong>Exemplo:</strong> “Quais recursos de design facilitariam a reciclagem da nossa embalagem?”</p>
+
+<h3 id="4-perguntas-relevantes-relevant">4. Perguntas Relevantes (Relevant)</h3>
+
+<p>Relacionam-se diretamente com o problema em análise.<br />
+<strong>Exemplo:</strong> “Quais fatores ambientais mudaram entre 1983 e 2004 que podem ter afetado a população de rãs?”</p>
+
+<h3 id="5-perguntas-vinculadas-ao-tempo-time-bound">5. Perguntas Vinculadas ao Tempo (Time-bound)</h3>
+
+<p>Delimitam um período específico para a análise.<br />
+<strong>Exemplo:</strong> “Quais foram os recursos mais populares nos últimos três anos?”</p>
+
+<h2 id="quais-perguntas-evitar-na-análise-de-dados">Quais perguntas evitar na análise de dados?</h2>
+
+<p>Além de saber fazer boas perguntas, é fundamental <strong>evitar armadilhas comuns</strong>:</p>
+
+<h3 id="1-perguntas-sugestivas">1. Perguntas Sugestivas</h3>
+
+<p>Induzem a uma resposta específica.<br />
+<strong>Ruim:</strong> “Esse produto é muito caro, não é?”<br />
+<strong>Melhor:</strong> “Qual é a sua opinião sobre este produto?”</p>
+
+<h3 id="2-perguntas-fechadas">2. Perguntas Fechadas</h3>
+
+<p>Limitam a resposta a “sim” ou “não”.<br />
+<strong>Ruim:</strong> “Você gostou da experiência?”<br />
+<strong>Melhor:</strong> “O que você aprendeu com essa experiência?”</p>
+
+<h3 id="3-perguntas-vagas">3. Perguntas Vagas</h3>
+
+<p>Faltam contexto e direcionamento.<br />
+<strong>Ruim:</strong> “A ferramenta funciona para você?”<br />
+<strong>Melhor:</strong> “Comparada à versão anterior, a nova ferramenta agiliza a entrada de dados? Em quanto tempo?”</p>
+
+<h3 id="4-perguntas-injustas">4. Perguntas Injustas</h3>
+
+<p>Fazem suposições equivocadas.<br />
+<strong>Ruim:</strong> “O que você mais gosta em nossas exposições?”<br />
+<strong>Melhor:</strong> “O que você achou da experiência geral em nossa última exposição?”</p>
+
+<h2 id="as-seis-fases-da-análise-de-dados-do-problema-à-ação">As seis fases da análise de dados: do problema à ação</h2>
+
+<p>Vamos detalhar o ciclo completo da análise de dados com foco em <strong>resolução de problemas com dados</strong>:</p>
+
+<h3 id="1-perguntar-ask">1. Perguntar (Ask)</h3>
+<p>Definir o problema e alinhar expectativas.</p>
+
+<h3 id="2-preparar-prepare">2. Preparar (Prepare)</h3>
+<p>Identificar, coletar e organizar os dados necessários.</p>
+
+<h3 id="3-processar-process">3. Processar (Process)</h3>
+<p>Limpar, corrigir e transformar os dados em um formato analisável.</p>
+
+<h3 id="4-analisar-analyze">4. Analisar (Analyze)</h3>
+<p>Usar ferramentas (como SQL, R, Excel, Power BI) para interpretar padrões e relações.</p>
+
+<h3 id="5-compartilhar-share">5. Compartilhar (Share)</h3>
+<p>Criar dashboards, relatórios ou apresentações para comunicar os insights.</p>
+
+<h3 id="6-agir-act">6. Agir (Act)</h3>
+<p>Tomar decisões com base nos dados e implementar as soluções recomendadas.</p>
+
+<h2 id="quais-tipos-de-problemas-os-analistas-de-dados-resolvem">Quais tipos de problemas os analistas de dados resolvem?</h2>
+
+<h3 id="1-fazer-previsões">1. Fazer previsões</h3>
+<p>Ex.: Prever o impacto de diferentes canais de marketing.</p>
+
+<h3 id="2-categorizar-informações">2. Categorizar informações</h3>
+<p>Ex.: Agrupar clientes por tipo de comportamento ou perfil de compra.</p>
+
+<h3 id="3-detectar-anomalias">3. Detectar anomalias</h3>
+<p>Ex.: Identificar aumentos inesperados em matrículas escolares.</p>
+
+<h3 id="4-identificar-temas">4. Identificar temas</h3>
+<p>Ex.: Agrupar feedbacks de clientes em tópicos recorrentes.</p>
+
+<h3 id="5-descobrir-conexões">5. Descobrir conexões</h3>
+<p>Ex.: Relacionar problemas similares entre parceiros de negócios.</p>
+
+<h3 id="6-encontrar-padrões">6. Encontrar padrões</h3>
+<p>Ex.: Reconhecer hábitos de compra repetitivos em períodos sazonais.</p>
+
+<hr />
+
+<h2 id="conclusão-o-poder-das-perguntas-na-análise-de-dados">Conclusão: o poder das perguntas na análise de dados</h2>
+
+<p>Dominar a <strong>arte de fazer boas perguntas</strong> é uma habilidade essencial na era dos dados. Perguntas SMART ajudam a:</p>
+
+<ul>
+  <li>Economizar tempo e recursos</li>
+  <li>Focar no que realmente importa</li>
+  <li>Obter insights relevantes e acionáveis</li>
+</ul>
+
+<p>A análise de dados não é apenas sobre números — é sobre <strong>compreensão, estratégia e impacto</strong>. Pergunte com clareza, analise com lógica e atue com confiança.</p>
+
+<p>E se você está pensando em migrar para a área de dados, existem muitas perguntas que podem surgir. Pensando nisso, fiz um breve relato sobre <a href="https://blog-oleonardof.pages.dev/blog/como-decidi-mudar-de-carreira/">Como mudar para a área de Dados</a>, destacando alguns pontos importantes para esse processo ser tranquilo e seguro nessa nova fase.</p>]]></content><author><name></name></author><category term="Análise de Dados" /><summary type="html"><![CDATA[Descubra como perguntas eficazes, especialmente as perguntas SMART, são a base da análise de dados bem-sucedida. Aprenda a transformar dados em decisões com foco, clareza e impacto.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://oleonardof.github.io/blog/assets/images/capa-post-perguntas-eficazes.png" /><media:content medium="image" url="https://oleonardof.github.io/blog/assets/images/capa-post-perguntas-eficazes.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Como Mudar para a Área de Dados: Um Relato de Transição de Carreira</title><link href="https://oleonardof.github.io/blog/como-decidi-mudar-de-carreira/" rel="alternate" type="text/html" title="Como Mudar para a Área de Dados: Um Relato de Transição de Carreira" /><published>2025-07-16T14:06:00+00:00</published><updated>2025-07-16T14:06:00+00:00</updated><id>https://oleonardof.github.io/blog/como-decidi-mudar-de-carreira</id><content type="html" xml:base="https://oleonardof.github.io/blog/como-decidi-mudar-de-carreira/"><![CDATA[<h2 id="rotina-conforto-e-o-sinal-de-mudança">Rotina, Conforto e o Sinal de Mudança</h2>
+<p>Por 11 anos, atuei como negociador de preços de combustível em uma grande transportadora. Meu dia a dia era basicamente negociar com postos e distribuidoras para garantir as melhores condições possíveis. Eu dominava meu trabalho, tinha bons resultados, era reconhecido. Mas, com o passar do tempo, a rotina começou a pesar. A previsibilidade dos dias, das negociações, das planilhas… tudo se tornou automático demais.</p>
+
+<p>Comecei a sentir que estava estagnado. Queria algo novo. Não só por insatisfação, mas também porque percebi que o mercado estava mudando — e eu não queria ficar para trás.</p>
+
+<p>Foi então que comecei a olhar para outras áreas, especialmente as que estavam crescendo. A área de Dados se destacou. Vi nela uma chance de encontrar novos desafios, sair da zona de conforto e ainda construir uma carreira com perspectiva de futuro.</p>
+
+<h2 id="o-primeiro-contato-com-dados">O Primeiro Contato com Dados</h2>
+<p>No meu antigo emprego, conheci o Power BI. A princípio, como usuário. Usava dashboards construídos por outras pessoas para buscar preços mais competitivos e embasar negociações. Mas não demorou para eu me perguntar: “E se eu conseguisse montar esses relatórios também?”</p>
+
+<p>Curioso, comecei a explorar a ferramenta. A empresa onde eu trabalhava oferecia alguns cursos, e fiz todos que pude. Mas a virada veio mesmo com o curso gratuito da <a href="https://www.datascienceacademy.com.br/" target="_blank">DSA (Data Science Academy)</a>. Foi ali que percebi que, sim, eu era capaz de aprender aquilo. E mais: comecei a gostar daquilo. Muito.</p>
+
+<h2 id="referências-e-fontes-de-inspiração">Referências e Fontes de Inspiração</h2>
+<p>Nessa jornada, duas figuras foram fundamentais: a própria DSA, com seus cursos muito bem estruturados, e o <a href="https://bio.site/leokarpa" target="_blank">Leonardo Karpinski</a>, que se destaca pelo didatismo e pela forma como transmite conhecimento. Ambos representam, hoje, o tipo de profissional que eu quero ser no futuro: alguém que domina a técnica, mas sabe compartilhar.</p>
+
+<p>Ver pessoas reais, com histórias reais, construindo carreira com base em dedicação e estudo me deu forças para continuar. Era como se dissessem: “Você também pode”.</p>
+
+<h2 id="dificuldades-reais-medos-reais">Dificuldades Reais, Medos Reais</h2>
+<p>Migrar de carreira nunca é fácil. No meu caso, o desafio foi ainda maior por causa das responsabilidades. Sou casado, tenho contas a pagar, compromissos assumidos. Pensar em sair de uma posição estável para apostar em uma nova área parecia irresponsável em alguns momentos. Mas, quando surgiu a oportunidade de fazer essa transição de forma planejada, abracei.</p>
+
+<p>Tive que dar um passo para trás. O salário caiu. Tive que abrir mão de algumas comodidades. Mas, no fundo, sabia que era necessário. Às vezes, retroceder um pouco é o que permite dar grandes saltos no futuro.</p>
+
+<h2 id="descobrindo-o-que-eu-carregava-dentro">Descobrindo o Que Eu Carregava Dentro</h2>
+<p>A cada aula, cada projeto, cada pequeno avanço, fui descobrindo algo novo — não só sobre dados, mas sobre mim mesmo.</p>
+
+<p>Aprendi que sou capaz de tomar decisões difíceis mesmo sentindo medo. Aprendi que a tal da “estabilidade” pode, muitas vezes, ser uma prisão disfarçada. E percebi que, quando você se arrisca, sua mente começa a criar, propor, sonhar de novo.</p>
+
+<p>Me redescobri. E foi uma das melhores sensações que já tive na vida profissional.</p>
+
+<h2 id="as-primeiras-conquistas">As Primeiras Conquistas</h2>
+<p>Hoje, três meses depois da mudança, já entreguei dois aplicativos no Power Apps, uma automação no Power Automate e estou finalizando meu primeiro dashboard.</p>
+
+<p>Para quem vê de fora, pode parecer pouco. Mas, para mim, é enorme. Porque são coisas que eu nem imaginava conseguir fazer tão cedo. E mais do que isso: pude apresentar esses projetos em reuniões com outras áreas, explicar o processo, os desafios, o que foi pensado. Isso me deu uma sensação de pertencimento que eu não tinha há muito tempo.</p>
+
+<h2 id="expectativas-x-realidade">Expectativas x Realidade</h2>
+<p>Uma coisa que eu percebi cedo foi que trabalhar com Dados não é só criar dashboards bonitos. Muitas vezes, o trabalho envolve coisas bem menos glamourosas: criar formulários para coleta de dados, organizar planilhas, padronizar nomenclaturas, garantir integridade nas informações.</p>
+
+<p>Mas tudo isso é essencial. A entrega só tem valor se resolve um problema real. Não importa se foi com Power BI, Excel ou Forms. O que importa é entregar algo útil, prático, confiável — e rápido.</p>
+
+<p>Essa visão mais pé no chão me ajudou a entender melhor o meu papel e a me organizar melhor dentro da equipe.</p>
+
+<h2 id="uma-nova-identidade-profissional">Uma Nova Identidade Profissional</h2>
+<p>Antes, meu cargo era Analista Administrativo, mas minhas atividades tinham forte viés comercial. Hoje sou Analista de Planejamento e Operações, atuando como suporte estratégico em uma das maiores institutions de ensino a distância do país.</p>
+
+<p>O título mudou, mas o mais importante foi o sentimento por trás da mudança: agora eu me vejo, de fato, como alguém da área de Dados.</p>
+
+<p>Assumir isso também é um processo. No começo, eu mesmo não me sentia seguro para dizer “trabalho com dados”. Hoje, tenho mais convicção. Ainda estou aprendendo, claro, mas já faço parte disso.</p>
+
+<h2 id="o-que-eu-precisei-abrir-mão">O Que Eu Precisei Abrir Mão</h2>
+<p>Como toda mudança real, essa também teve custos. Abri mão de um salário um pouco melhor. Precisei estudar à noite, nos fins de semana. Tive que recusar convites, sair menos, gastar mais tempo vendo vídeo aula do que série.</p>
+
+<p>Mas, em troca, ganhei mais qualidade de vida. Tenho folgas aos sábados, feriados prolongados, e um ambiente mais leve para trabalhar. E, acima de tudo, ganhei perspectiva de crescimento.</p>
+
+<p>Foi um investimento — e tudo indica que vai valer muito a pena.</p>
+
+<h2 id="se-você-está-pensando-em-mudar-de-carreira">Se Você Está Pensando em Mudar de Carreira…</h2>
+<p>Não importa se você tem 25, 35 ou 50 anos. Não importa se nunca ouviu falar em Power BI ou SQL. Se você sente que precisa de algo novo, algo que te desafie, algo que te faça crescer, vá atrás disso.</p>
+
+<p>Comece devagar. Estude o básico. Pare de gastar tempo com o que não te leva pra frente. Pode ser que demore. Pode ser que pareça impossível no começo. Mas, uma hora, a chance aparece.</p>
+
+<p>E, quando ela aparecer, você precisa estar pronto para agarrá-la.</p>]]></content><author><name></name></author><category term="Carreira" /><summary type="html"><![CDATA[Descubra como deixei para trás 11 anos em uma carreira estável para me reinventar na área de Dados. Compartilho os desafios, aprendizados e conquistas dos primeiros meses dessa mudança — um relato sincero para quem pensa em dar um novo rumo à vida profissional.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://oleonardof.github.io/blog/assets/images/capa-post-transicao-de-carreira.png" /><media:content medium="image" url="https://oleonardof.github.io/blog/assets/images/capa-post-transicao-de-carreira.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

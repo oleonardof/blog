@@ -9,3 +9,4 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-tagging
+tag_page_dir: tag

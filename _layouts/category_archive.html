@@ -1,46 +1,45 @@
+{% raw %}
 ---
+# Este é o layout para a página de arquivo de categoria
+# Ele usa seu layout 'default' como base para manter o header, footer, etc.
 layout: default
 ---
+
 <div class="container mx-auto px-4 py-8">
-    <div class="text-center mb-12 pt-16">
-        <h1 class="text-3xl md:text-4xl font-bold">Posts na Categoria: <span class="text-orange-600 dark:text-orange-400 capitalize">{{ page.tag }}</span></h1>
-    </div>
+  <header class="text-center mb-10">
+    <h1 class="text-2xl text-gray-500 dark:text-gray-400">
+      Posts na Categoria
+    </h1>
+    <h2 class="text-4xl font-bold text-orange-600 dark:text-orange-400 mt-1">
+      {{ page.title }}
+    </h2>
+  </header>
 
-    <div class="flex flex-col md:flex-row -mx-4">
-        <main class="w-full md:w-3/4 lg:w-4/5 px-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                {% for post in site.posts %}
-                  {% if post.categories contains page.tag %}
-                    <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col">
-                        {% if post.image %}
-                        <a href="{{ post.url | relative_url }}">
-                            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="h-48 w-full object-cover">
-                        </a>
-                        {% else %}
-                        <a href="{{ post.url | relative_url }}">
-                            <div class="h-48 bg-orange-100 dark:bg-gray-700 flex items-center justify-center">
-                                <i class="fas fa-newspaper text-5xl text-orange-600 dark:text-orange-400"></i>
-                            </div>
-                        </a>
-                        {% endif %}
-                        <div class="p-6 flex flex-col flex-grow">
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">{{ post.date | date: "%d de %B de %Y" }}</p>
-                            <h3 class="text-xl font-semibold mb-2 flex-grow">
-                                <a href="{{ post.url | relative_url }}" class="text-gray-800 dark:text-white hover:text-orange-500 dark:hover:text-orange-400">
-                                    {{ post.title }}
-                                </a>
-                            </h3>
-                            <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-                        </div>
-                    </div>
-                  {% endif %}
-                {% endfor %}
-                
-            </div>
-        </main>
-
-        {% include sidebar.html %}
+  <div class="space-y-8">
+    
+    {% for post in page.posts %}
+      <article class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition hover:shadow-xl">
+        <h3 class="text-2xl font-bold">
+          <a href="{{ post.url | relative_url }}" class="text-orange-600 dark:text-orange-400 hover:underline">
+            {{ post.title }}
+          </a>
+        </h3>
+        <div class="text-gray-500 dark:text-gray-400 text-sm mt-2 mb-4">
+            <span>
+                {% assign m = post.date | date: "%-m" %}{{ post.date | date: "%d" }} de {% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Março{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %} de {{ post.date | date: "%Y" }}
+            </span>
+        </div>
         
-    </div>
+        {% if post.excerpt %}
+          <div class="text-gray-700 dark:text-gray-300">
+            {{ post.excerpt | strip_html | truncatewords: 40 }}
+          </div>
+        {% endif %}
+      </article>
+    {% else %}
+      <p class="text-center text-gray-500">Não há posts nesta categoria ainda.</p>
+    {% endfor %}
+
+  </div>
 </div>
+{% endraw %}

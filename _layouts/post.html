@@ -1,3 +1,4 @@
+{% raw %}
 ---
 layout: default
 ---
@@ -7,13 +8,21 @@ layout: default
             <article class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-lg shadow-md">
                 <header class="mb-6 text-center">
                     <h1 class="text-4xl font-bold text-orange-600 dark:text-orange-400">{{ page.title }}</h1>
-                <div class="flex items-center justify-center text-gray-500 dark:text-gray-400 mt-2 text-sm">
-                    <span>
-                        {% assign m = page.date | date: "%-m" %}{{ page.date | date: "%d" }} de {% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Março{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %} de {{ page.date | date: "%Y" }}
-                    </span>
-                    <span class="mx-2">-</span> {% include reading_time.html content=page.content %}
-                </div>    
-                </header>
+                    <div class="flex items-center justify-center flex-wrap text-gray-500 dark:text-gray-400 mt-2 text-sm">
+                        <span>
+                            <i class="fas fa-calendar-alt mr-1"></i>
+                            {% assign m = page.date | date: "%-m" %}{{ page.date | date: "%d" }} de {% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Março{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %} de {{ page.date | date: "%Y" }}
+                        </span>
+                        <span class="mx-2">-</span> {% include reading_time.html content=page.content %}
+                    </div>
+                    {% if page.categories.size > 0 %}
+                    <div class="mt-4 text-center">
+                        {% for category in page.categories %}
+                        <a href="{{ site.baseurl }}/categorias/{{ category | slugify }}/" class="inline-block bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2 hover:bg-orange-200 dark:hover:bg-orange-800 transition">#{{ category }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    </header>
                 {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="w-full h-auto rounded-lg mb-8 shadow-lg">{% endif %}
                 <div class="post-content text-gray-800 dark:text-gray-100 leading-relaxed space-y-6">{{ content }}</div>
 
@@ -50,3 +59,4 @@ layout: default
         {% include sidebar.html %}
     </div>
 </div>
+{% endraw %}

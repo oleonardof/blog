@@ -20,7 +20,7 @@
             {% for category in site.categories %}
             <li>
                 <a href="{{ site.baseurl }}/categorias/{{ category[0] | slugify }}/" class="flex justify-between items-center text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">
-                    <span>{{ category[0] }}</span>
+                    <span>{{ category[0] | replace: '-', ' ' | capitalize_all }}</span>
                     <span class="text-xs bg-orange-100 dark:bg-orange-900/50 text-orange-800 dark:text-orange-300 font-semibold px-2 py-1 rounded-full">
                         {{ category[1].size }}
                     </span>

@@ -24,6 +24,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-archives
+  - jekyll-redirect-from
 
 # Configurações do Plugin Jekyll Archives
 # Este bloco configura o plugin para criar as páginas de categorias e tags.

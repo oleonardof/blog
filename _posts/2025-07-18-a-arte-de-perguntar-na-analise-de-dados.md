@@ -5,7 +5,9 @@ description: "Descubra como perguntas eficazes, especialmente as perguntas SMART
 date: 2025-07-18 13:19:00 -0300
 image: /assets/images/capa-post-perguntas-eficazes.png
 alt: "Uma pessoa em pé diante de um grande mural digital cheio de dados"
-category: Análise de Dados
+category: analise-de-dados
+redirect_from:
+    - /blog/análise de dados/a-arte-de-perguntar-na-analise-de-dados/
 ---
 
 ## Por que fazer as perguntas certas é essencial na análise de dados?

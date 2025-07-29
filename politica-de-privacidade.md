@@ -2,7 +2,7 @@
 layout: default
 title: Política de Privacidade
 permalink: /politica-de-privacidade/
-last_modified_at: 2025-07-01
+last_modified_at: 2025-06-01
 ---
 
 <div class="container mx-auto px-4 py-16 max-w-4xl">

@@ -2,7 +2,7 @@
 layout: post
 title: "O Universo da Análise de Dados: Ferramentas Essenciais e Estratégias para o Sucesso"
 description: "Descubra como as ferramentas certas, o raciocínio analítico e a comunicação eficaz transformam dados brutos em decisões estratégicas no contexto da educação superior."
-date: 2025-07-21 13:27:00 -0300
+date: 2025-06-21 13:27:00 -0300
 image: /assets/images/painel-analise-dados.png
 alt: "Painel moderno de análise de dados com gráficos em uma reunião acadêmica, mostrando professores e gestores universitários analisando informações."
 categories: analise-de-dados

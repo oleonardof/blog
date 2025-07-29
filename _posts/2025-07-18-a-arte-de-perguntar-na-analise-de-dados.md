@@ -2,7 +2,7 @@
 layout: post
 title: "A Arte de Perguntar: Desvendando o Poder da Análise de Dados"
 description: "Descubra como perguntas eficazes, especialmente as perguntas SMART, são a base da análise de dados bem-sucedida. Aprenda a transformar dados em decisões com foco, clareza e impacto."
-date: 2025-07-18 13:19:00 -0300
+date: 2025-06-18 13:19:00 -0300
 image: /assets/images/capa-post-perguntas-eficazes.png
 alt: "Uma pessoa em pé diante de um grande mural digital cheio de dados"
 category: analise-de-dados

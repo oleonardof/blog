@@ -4,7 +4,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Feito com IA](https://img.shields.io/badge/Feito%20com%20IA-Gemini-4A90E2?style=for-the-badge&logo=google-gemini&logoColor=white)
 
-**Visite o site ao vivo:** [**https://blog-oleonardof.pages.dev/**](https://blog-oleonardof.pages.dev/)
+**Visite o site ao vivo:** [Blog - Leonardo Silva](https://oleonardof.github.io/blog/)
 
 ![Screenshot do Blog](./assets/images/blog.png)
 
@@ -77,3 +77,4 @@ O conteúdo e o código deste projeto estão sob uma licença customizada que pe
 ---
 
 **Leonardo Silva** - [LinkedIn](https://www.linkedin.com/in/oleonardof/) · [GitHub](https://github.com/oleonardof)
+

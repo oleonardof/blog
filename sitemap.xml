@@ -3,6 +3,7 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% comment %} Loop de Posts {% endcomment %}
   {% for post in site.posts %}
     <url>
       <loc>{{ post.url | absolute_url }}</loc>
@@ -10,19 +11,21 @@ layout: null
     </url>
   {% endfor %}
 
+  {% comment %} Loop de Páginas (exclui sitemap.xml, feed.xml, robots.txt via verificação de extensão ou propriedade sitemap) {% endcomment %}
   {% for page in site.pages %}
     {% if page.layout != nil and page.sitemap != false %}
-    <url>
-      <loc>{{ page.url | absolute_url }}</loc>
-      <lastmod>{{ page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
-    </url>
+      {% unless page.url contains '.xml' or page.url contains '.json' or page.url contains 'assets' %}
+        <url>
+          <loc>{{ page.url | absolute_url }}</loc>
+          <lastmod>{{ page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
+        </url>
+      {% endunless %}
     {% endif %}
   {% endfor %}
 
-  {% for category in site.categories %}
-    <url>
-      <loc>{{ site.url }}{{ site.baseurl }}/categorias/{{ category[0] | slugify }}/</loc>
-      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    </url>
-  {% endfor %}
+  {% comment %} 
+    O loop manual de categorias foi removido para evitar duplicidade, 
+    pois o loop de 'pages' acima geralmente já captura as páginas de categoria geradas.
+    Se suas categorias sumirem, reative o loop abaixo.
+  {% endcomment %}
 </urlset>

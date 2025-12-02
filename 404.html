@@ -97,68 +97,64 @@
 
     <main class="flex-grow pt-20">
         <style>
+  /* Container principal */
   .error-container {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
     font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Garante centralização vertical e horizontal dos itens flex */
+    justify-content: center;
   }
   
+  /* O número 404 */
   .error-code {
-    font-size: 120px;
+    font-size: 180px; /* Aumentado */
     font-weight: 900;
-    color: #e0e0e0; /* Cinza claro para não pesar */
-    line-height: 1;
+    color: #ffffff; /* Branco para destaque no fundo escuro */
+    line-height: 0.9;
     margin: 0;
-    letter-spacing: -5px;
+    letter-spacing: -8px;
+    opacity: 0.9;
   }
   
+  /* Título "Ops" */
   .error-title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
-    margin-top: -20px;
-    margin-bottom: 15px;
-    color: #333;
+    margin-top: 20px; /* Mais espaço entre o 404 e o título */
+    margin-bottom: 20px;
+    color: #e0e0e0; /* Cinza bem claro */
   }
   
+  /* Texto descritivo */
   .error-text {
     font-size: 18px;
-    color: #666;
+    color: #b0b0b0; /* Cinza médio para leitura suave */
     max-width: 500px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 50px auto;
     line-height: 1.6;
   }
 
-  .button-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  /* Estilo dos Botões */
+  /* O Botão */
   .btn-404 {
     display: inline-block;
-    padding: 12px 30px;
-    border-radius: 8px;
+    padding: 15px 40px;
+    border-radius: 50px; /* Borda mais arredondada e moderna */
     text-decoration: none !important;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 16px;
     transition: all 0.3s ease;
-  }
-
-  .btn-primary {
-    background-color: #1a1a1a;
-    color: #ffffff !important;
-    border: 2px solid #1a1a1a;
-  }
-
-  .btn-secondary {
-    background-color: transparent;
-    color: #1a1a1a !important;
-    border: 2px solid #1a1a1a;
+    background-color: #ffffff; /* Fundo branco para contraste máximo */
+    color: #1a1a1a !important; /* Texto escuro */
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   }
 
   .btn-404:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255,255,255,0.15); /* Brilho ao passar o mouse */
     opacity: 0.9;
   }
 </style>
@@ -169,13 +165,10 @@
   
   <p class="error-text">
     O link que você clicou pode estar quebrado ou a página foi removida. 
-    Não se preocupe, você pode voltar para o início ou explorar nosso conteúdo.
+    Não se preocupe, o conteúdo continua por aqui.
   </p>
 
-  <div class="button-group">
-    <a href="/blog/" class="btn-404 btn-primary">Voltar ao Início</a>
-    <a href="/blog/" class="btn-404 btn-secondary">Ver Blog</a>
-  </div>
+  <a href="/blog/" class="btn-404">Voltar ao Início</a>
 </div>
 
     </main>

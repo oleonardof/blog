@@ -7,7 +7,7 @@ image: /assets/images/capa-post-perguntas-eficazes.png
 alt: "Uma pessoa em pé diante de um grande mural digital cheio de dados"
 category: analise-de-dados
 redirect_from:
-    - /blog/análise de dados/a-arte-de-perguntar-na-analise-de-dados/
+    - /blog/análise de dados/a-arte-de-perguntar-na-analise-de-dados
 ---
 
 ## Por que fazer as perguntas certas é essencial na análise de dados?
@@ -153,5 +153,6 @@ Dominar a **arte de fazer boas perguntas** é uma habilidade essencial na era do
 - Obter insights relevantes e acionáveis
 
 A análise de dados não é apenas sobre números — é sobre **compreensão, estratégia e impacto**. Pergunte com clareza, analise com lógica e atue com confiança.
+
 
 E se você está pensando em migrar para a área de dados, existem muitas perguntas que podem surgir. Pensando nisso, fiz um breve relato sobre [Como mudar para a área de Dados](https://blog-oleonardof.pages.dev/blog/como-decidi-mudar-de-carreira/), destacando alguns pontos importantes para esse processo ser tranquilo e seguro nessa nova fase.

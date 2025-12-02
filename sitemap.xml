@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
+  
     <url>
       <loc>https://oleonardof.github.io/blog/analise-de-dados/analise-de-dados-ferramentas-essenciais-e-estrategias-para-o-sucesso/</loc>
       <lastmod>2025-06-21T16:27:00+00:00</lastmod>
@@ -18,31 +19,23 @@
   
 
   
+  
     
-    <url>
-      <loc>https://oleonardof.github.io/blog/</loc>
-      <lastmod>2025-12-02T13:01:10+00:00</lastmod>
-    </url>
+      
+        <url>
+          <loc>https://oleonardof.github.io/blog/</loc>
+          <lastmod>2025-12-02T13:01:52+00:00</lastmod>
+        </url>
+      
     
   
     
-    <url>
-      <loc>https://oleonardof.github.io/blog/politica-de-privacidade/</loc>
-      <lastmod>2025-06-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-    <url>
-      <loc>https://oleonardof.github.io/blog/termos-de-uso/</loc>
-      <lastmod>2025-06-01T00:00:00+00:00</lastmod>
-    </url>
+      
+        <url>
+          <loc>https://oleonardof.github.io/blog/politica-de-privacidade/</loc>
+          <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+        </url>
+      
     
   
     
@@ -52,31 +45,40 @@
     
   
     
-    <url>
-      <loc>https://oleonardof.github.io/blog/categorias/carreira/</loc>
-      <lastmod>2025-12-02T13:01:10+00:00</lastmod>
-    </url>
+      
+        <url>
+          <loc>https://oleonardof.github.io/blog/termos-de-uso/</loc>
+          <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+        </url>
+      
     
   
     
-    <url>
-      <loc>https://oleonardof.github.io/blog/categorias/analise-de-dados/</loc>
-      <lastmod>2025-12-02T13:01:10+00:00</lastmod>
-    </url>
+  
+    
+  
+    
+  
+    
+      
+        <url>
+          <loc>https://oleonardof.github.io/blog/categorias/carreira/</loc>
+          <lastmod>2025-12-02T13:01:52+00:00</lastmod>
+        </url>
+      
+    
+  
+    
+      
+        <url>
+          <loc>https://oleonardof.github.io/blog/categorias/analise-de-dados/</loc>
+          <lastmod>2025-12-02T13:01:52+00:00</lastmod>
+        </url>
+      
     
   
     
   
 
-  
-    <url>
-      <loc>https://oleonardof.github.io/blog/categorias/carreira/</loc>
-      <lastmod>2025-12-02T13:01:10+00:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://oleonardof.github.io/blog/categorias/analise-de-dados/</loc>
-      <lastmod>2025-12-02T13:01:10+00:00</lastmod>
-    </url>
   
 </urlset>
